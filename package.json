@@ -1,0 +1,22 @@
+{
+  "name": "training-automation",
+  "version": "1.0.0",
+  "description": "Greetings. This repository will serve as our _playground_ for learning __playwright automation__. \r > You may clone this repo and create your own branches where you can code however you like. \r > You'll get to learn how to use common git commands here too.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rica-datoc/training-automation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rica-datoc/training-automation/issues"
+  },
+  "homepage": "https://github.com/rica-datoc/training-automation#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.39.0",
+    "@types/node": "^20.8.7"
+  }
+}
