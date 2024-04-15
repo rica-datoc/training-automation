@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript Basics Training</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="sample.js"></script>
+    <script src="exercise.js"></script>
+</head>
+
+<body>
+    <h1 class="title">JavaScript Basics</h1>
+    <p class="title">This is a sample webpage that calls functions from sample.js file. You may view the code on
+        your local machines</p>
+
+    <!-- C O N D I T I O N S -->
+    <div class="conditional-statements">
+        <h2 class="sample">Conditional Statements</h2>
+        <div class="if-only">
+            <p><strong>if |</strong> Write a letter and check if it's a vowel.</p>
+            <input id="char" type="text">
+            <button id="if-only-check" onclick="ifOnly()">CHECK</button>
+            <p id="if-only-result" style="margin: 10px; display: inline"></p>
+        </div>
+        <div class="if-else">
+            <p><strong>if-else |</strong> Input two numbers and check if one of the number is 100
+                or if the sum of the two numbers is 100</p>
+            <input id="first" type="text">
+            <input id="second" type="text">
+            <button id="if-else-check" onclick="ifElse()">CHECK</button>
+            <p id="if-else-result" style="margin: 10px; display: inline"></p>
+        </div>
+        <div class="if-else-if">
+            <p><strong>if-else-if |</strong> Input a day and check if it's weekend</p>
+            <input id="day" type="text">
+            <button id="if-else-if-check" onclick="ifElseIf()">CHECK</button>
+            <p id="if-else-if-result" style="margin: 10px; display: inline"></p>
+        </div>
+        <div class="season-detector">
+            <p><strong>switch |</strong> Input a month and check its season</p>
+            <input id="month" type="text">
+            <button id="season-check" onclick="seasonDetector()">CHECK</button>
+            <p id="season-result" style="margin: 10px; display: inline"></p>
+        </div>
+        <div class="palindrome">
+            <p><strong>ternary? |</strong> Input a word and check if it's a palindrome</p>
+            <input name="word" type="text">
+            <button id="check-palindrome" onclick="isPalindrome()">CHECK</button>
+            <p id="palindrome-result" style="margin: 10px; display: inline"></p>
+        </div>
+    </div>
+
+    <!-- L O O P S -->
+    <div class="loops">
+        <h2 class="sample">LOOPS</h2>
+        <div class="multiplication-table">
+            <p><strong>for |</strong> Input a number and print its Multiplication Table</p>
+            <input name="num" type="text">
+            <button id="get-table" onclick="multiplicationTable()">TABLE</button>
+            <div id="multiplication-table-result" style="display: none;">
+            </div>
+        </div>
+
+        <div class="factorial">
+            <p><strong>do-while |</strong> Input a number and get its factorial</p>
+            <input name="num" type="text">
+            <button id="get-factorial" onclick="getFactorial()">FACTORIAL</button>
+            <p id="factorial-result" style="margin: 10px; display: inline"></p>
+        </div>
+
+        <div class="reverse-number">
+            <p><strong>while |</strong> Input a number and reverse it</p>
+            <input name="num" type="text">
+            <button id="reverse-number" onclick="reverseNumber()">REVERSE</button>
+            <p id="reverse-number-result" style="margin: 10px; display: inline"></p>
+        </div>
+    </div>
+
+    <!-- E X E R C I S E S -->
+    <div class="basic-exercises">
+        <h2 class="sample">Basic Exercises</h2>
+        <div class="number-of-vowels">
+            <p><strong>Number of Vowels |</strong> Input a word or phrase and count the number of vowels</p>
+            <input id="statement" type="text">
+            <button id="count-vowels" onclick="numberOfVowels()">COUNT</button>
+            <p id="number-of-vowels-result" style="margin: 10px; display: inline"></p>
+        </div>
+        <div class="largest-number">
+            <p><strong>Largest Number |</strong> Input series of numbers separated by comma(,) and get the largest number</p>
+            <input name="numbers" type="text">
+            <button id="get-largest" onclick="getLargest()">MAX</button>
+            <p id="largest-number-result" style="margin: 10px; display: inline"></p>
+        </div>
+        <div class="sign-of-product">
+            <p><strong>Sign of Product |</strong> Input q series of numbers separated by comma(,) and check if the product is positive or negative
+            </p>
+            <input name="numbers" type="text">
+            <button id="get-sign" onclick="getProductSign()">CHECK</button>
+            <p id="sign-of-product-result" style="margin: 10px; display: inline"></p>
+        </div>
+        <div class="print-odd">
+            <p><strong>Print Odd |</strong> Input a series of numbers separated by comma(,) and print all the odd numbers from the list</p>
+            <input name="numbers" type="text">
+            <button id="print-odd" onclick="printOdd()">PRINT</button>
+            <p id="print-odd-result" style="margin: 10px; display: inline"></p>
+        </div>
+        <div class="print-even">
+            <p><strong>Print Even |</strong> Input a series of numbers separated by comma(,) and print all the even numbers from the list</p>
+            <input name="numbers" type="text">
+            <button id="print-even" onclick="printEven()">PRINT</button>
+            <p id="print-even-result" style="margin: 10px; display: inline"></p>
+        </div>
+        <div class="fizzbuzz">
+            <p><strong>FizzBuzz |</strong> Input a series of numbers separated by comma(,) and print Fizz if divisible by 3, Buzz if divisible by 5, and
+                FizzBuzz if divisible by both</p>
+            <input name="num" type="text">
+            <button id="fizzbuzz" onclick="fizzBuzz()">CHECK</button>
+            <p id="fizzbuzz-result" style="margin: 10px; display: inline"></p>
+        </div>
+        <div class="remove-duplicates">
+            <p><strong>Remove Duplicates |</strong> Input a series of numbers separated by comma(,) and remove duplicates</p>
+            <input name="numbers" type="text">
+            <button id="remove-duplicates" onclick="removeDuplicates()">REMOVE</button>
+            <p id="remove-duplicates-result" style="margin: 10px; display: inline"></p>
+        </div>
+    </div>
+</body>
+</html>
