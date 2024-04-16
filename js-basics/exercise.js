@@ -86,7 +86,7 @@ function printEven(){
 
 function fizzBuzz(){
     // Input
-    const input = document.querySelector('.fizz-buzz [name="numbers"]').value;
+    const input = document.querySelector('.fizzbuzz [name="numbers"]').value;
     // sample input: 1,2,3,4,5,11,12,15
     const numbers = input.split(',').map(Number);
     // numbers = [1, 2, 3, 4, 5, 11, 12, 15]
@@ -97,7 +97,7 @@ function fizzBuzz(){
      */
 
     // Output
-    document.getElementById("fizz-buzz-result").innerHTML = `The FizzBuzz of [${numbers}] is ${fizzBuzzNumbers}`;
+    document.getElementById("fizzbuzz-result").innerHTML = `The FizzBuzz of [${numbers}] is ${fizzBuzzNumbers}`;
     // sample output: The FizzBuzz of [1,2,3,4,5,11,12,15] is 1,2,Fizz,4,Buzz,11,Fizz,FizzBuzz
 }
 
