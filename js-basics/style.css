@@ -10,9 +10,7 @@ p {
     text-align: center;
 }
 
-.conditional-statements,
-.loops,
-.basic-exercises {
+section {
     margin: 20px;
     padding: 20px;
     border: 1px solid #000;

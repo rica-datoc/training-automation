@@ -1,7 +1,7 @@
 // console.log("CONDITIONAL STATEMENTS...");
 // if only statement
 function ifOnly() {
-    const char = String(document.getElementById("char").value);
+    const char = String(document.getElementById("character").value);
     if ('aeiou'.includes(char) && char.length == 1) {
         document.getElementById("if-only-result").innerHTML = char + " is a vowel";
     }
@@ -74,7 +74,7 @@ function seasonDetector() {
 // ternary operator
 function isPalindrome() {
     // Input
-    const input = String(document.querySelector('.palindrome [name="word"]').value);
+    const input = String(document.querySelector('.ternary #word').value);
     const temp = input.toLowerCase().trim().replace(/[^a-zA-Z0-9]+/g, '');
     let isPalindrome = false;
 
