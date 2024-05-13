@@ -90,6 +90,7 @@ function multiplicationTable() {
     // Input
     const num = +document.querySelector(".multiplication-table [name='num']").value;
     const table = document.querySelector("#multiplication-table-result");
+    const name = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"]
 
     // Process
     table.style.display = "block";
@@ -98,10 +99,12 @@ function multiplicationTable() {
     for (let i = 1; i <= 10; i++) {
         const result = num * i;
         p[i] = document.createElement("p");
+        p[i].setAttribute("name", name[i - 1]);
         p[i].innerHTML = `${num} * ${i} = ${result}`;
         table.appendChild(p[i]);
     }
 }
+
 
 function getFactorial() {
     const input = Number(document.querySelector('.factorial [name="num"]').value);
